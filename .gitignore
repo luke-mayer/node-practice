@@ -1,0 +1,6 @@
+api-basic/node_modules/
+node_modules/
+api-basic/.env
+.env
+*/node_modules/
+*/.env

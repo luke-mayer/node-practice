@@ -11,6 +11,10 @@ app.get('/', (req, res) => {
   res.send('Hello World!');
 });
 
+app.get('/params/:p', (req, res) => {
+  res.send(req.params);
+});
+
 app.listen(port, () => {
   console.log(`API app listening on port ${port}`);
 });

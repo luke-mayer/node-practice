@@ -37,6 +37,15 @@ nextArr.push(nextC);
 
 app.get('/next', nextArr);
 
+app
+  .route('/route')
+  .get((req, res) => {
+    res.send('/route - GET');
+  })
+  .post((req, res) => {
+    res.send('/route - POST');
+  });
+
 app.listen(port, () => {
   console.log(`API app listening on port ${port}`);
 });
